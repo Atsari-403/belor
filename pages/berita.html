@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Berita dan kegiatan terkini dari Desa Belor. Ikuti perkembangan terbaru dari desa kami.">
+    <meta name="keywords" content="Berita Desa Belor, kegiatan desa, pembangunan, sosial, budaya">
+    <meta name="author" content="Pemerintah Desa Belor">
+    
+    <title>Berita - Desa Belor</title>
+    <link rel="icon" type="image/png" href="../assets/image/logodesa.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components/navbar.css">
+    <link rel="stylesheet" href="../assets/css/components/footer.css">
+    <link rel="stylesheet" href="../assets/css/components/modal.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/pages/berita.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-brand">
+                <img src="../assets/image/logodesa.png" alt="Logo Desa Belor" class="nav-logo">
+                <div class="nav-text">
+                    <h3>Desa Belor</h3>
+                    <p>Kabupaten [Nama Kabupaten]</p>
+                </div>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Beranda</a>
+                <a href="./profil.html" class="nav-link">Profil Desa</a>
+                <a href="./pemerintahan.html" class="nav-link">Pemerintahan</a>
+                <a href="./layanan.html" class="nav-link">Layanan</a>
+                <a href="./pertanian.html" class="nav-link">Pertanian</a>
+                <a href="./berita.html" class="nav-link active">Berita</a>
+                <a href="./galeri.html" class="nav-link">Galeri</a>
+                <a href="./kontak.html" class="nav-link">Kontak</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Berita & Kegiatan Desa</h1>
+            <p>Informasi terkini seputar pembangunan, sosial, dan budaya di Desa Belor.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="berita-layout">
+                <!-- Main Content Area -->
+                <div class="berita-main">
+                    <!-- Featured News -->
+                    <article class="featured-news-card">
+                        <div class="news-image">
+                            <img src="../assets/image/galeri1.jpg" alt="Berita Utama">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date">22 Agustus 2025</span>
+                            <h3>Musyawarah Desa Membahas Rencana Pembangunan Jangka Menengah</h3>
+                            <p>Seluruh elemen masyarakat, mulai dari tokoh adat, pemuda, hingga perwakilan perempuan, diundang untuk memberikan masukan dalam musyawarah desa yang bertujuan untuk menyusun Rencana Pembangunan Jangka Menengah Desa (RPJMDes) periode 2026-2032...</p>
+                            <a href="#" class="news-link" data-modal-open="modal-berita-1">Baca Selengkapnya</a>
+                        </div>
+                    </article>
+
+                    <h2 class="list-title">Semua Berita</h2>
+
+                    <!-- News List -->
+                    <div class="news-list-grid">
+                        <article class="news-card">
+                            <div class="news-image"><img src="../assets/image/galeri2.jpg" alt="Berita 2"></div>
+                            <div class="news-content">
+                                <span class="news-date">18 Agustus 2025</span>
+                                <h3>Penyuluhan Pertanian Organik untuk Petani Muda</h3>
+                                <p>Dinas Pertanian Kabupaten memberikan pelatihan tentang metode pertanian organik modern kepada para petani muda di balai desa...</p>
+                                <a href="#" class="news-link" data-modal-open="modal-berita-2">Baca Selengkapnya</a>
+                            </div>
+                        </article>
+                        <article class="news-card">
+                            <div class="news-image"><img src="../assets/image/galeri3.jpg" alt="Berita 3"></div>
+                            <div class="news-content">
+                                <span class="news-date">15 Agustus 2025</span>
+                                <h3>Kerja Bakti Membersihkan Saluran Irigasi</h3>
+                                <p>Warga desa bergotong-royong memastikan kelancaran distribusi air untuk sawah menjelang musim tanam berikutnya...</p>
+                                <a href="#" class="news-link" data-modal-open="modal-berita-3">Baca Selengkapnya</a>
+                            </div>
+                        </article>
+                        <article class="news-card">
+                            <div class="news-image"><img src="../assets/image/galeri4.jpeg" alt="Berita 4"></div>
+                            <div class="news-content">
+                                <span class="news-date">10 Agustus 2025</span>
+                                <h3>Peringatan HUT RI ke-80 di Desa Belor Meriah</h3>
+                                <p>Berbagai lomba dan kegiatan diadakan untuk memeriahkan hari kemerdekaan, puncaknya adalah pagelaran seni budaya...</p>
+                                <a href="#" class="news-link" data-modal-open="modal-berita-4">Baca Selengkapnya</a>
+                            </div>
+                        </article>
+                        <article class="news-card">
+                            <div class="news-image"><img src="../assets/image/galeri5.jpg" alt="Berita 5"></div>
+                            <div class="news-content">
+                                <span class="news-date">5 Agustus 2025</span>
+                                <h3>Program Posyandu Remaja Resmi Diluncurkan</h3>
+                                <p>Untuk meningkatkan kesadaran kesehatan di kalangan remaja, Puskesmas dan pemerintah desa meluncurkan Posyandu Remaja...</p>
+                                <a href="#" class="news-link" data-modal-open="modal-berita-5">Baca Selengkapnya</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="berita-sidebar">
+                    <div class="widget">
+                        <h3 class="widget-title">Kategori</h3>
+                        <ul class="widget-list">
+                            <li><a href="#">Pemerintahan</a></li>
+                            <li><a href="#">Pertanian</a></li>
+                            <li><a href="#">Sosial & Budaya</a></li>
+                            <li><a href="#">Pembangunan</a></li>
+                            <li><a href="#">Kesehatan</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h3 class="widget-title">Arsip</h3>
+                        <ul class="widget-list">
+                            <li><a href="#">Agustus 2025</a></li>
+                            <li><a href="#">Juli 2025</a></li>
+                            <li><a href="#">Juni 2025</a></li>
+                            <li><a href="#">Mei 2025</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <div class="footer-brand">
+                            <img src="../assets/image/logodesa.png" alt="Logo Desa Belor">
+                            <h3>Desa Belor</h3>
+                        </div>
+                        <p>Website resmi Desa Belor yang menyediakan informasi lengkap tentang pemerintahan, layanan publik, dan potensi desa.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Menu Utama</h4>
+                        <ul class="footer-links">
+                            <li><a href="./profil.html">Profil Desa</a></li>
+                            <li><a href="./pemerintahan.html">Pemerintahan</a></li>
+                            <li><a href="./layanan.html">Layanan</a></li>
+                            <li><a href="./pertanian.html">Pertanian</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Informasi</h4>
+                        <ul class="footer-links">
+                            <li><a href="./berita.html">Berita</a></li>
+                            <li><a href="./galeri.html">Galeri</a></li>
+                            <li><a href="./kontak.html">Kontak</a></li>
+                            <li><a href="#" data-modal-open="modal-pengaduan">Pengaduan</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Kontak Kami</h4>
+                        <div class="contact-info">
+                            <p>📍 Jl. Raya Desa Belor No. XX<br>Kec. [Nama Kecamatan]<br>[Nama Kabupaten], [Kode Pos]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Desa Belor. Seluruh hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals Berita -->
+    <div class="modal" id="modal-berita-1">
+        <div class="modal-content modal-berita">
+            <div class="modal-header">
+                <h3>Musyawarah Desa Membahas Rencana Pembangunan Jangka Menengah</h3>
+                <button class="modal-close" data-modal-close>&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="../assets/image/galeri1.jpg" alt="Berita Utama" class="modal-berita-img">
+                <p>Ini adalah isi lengkap dari berita tentang musyawarah desa. Seluruh elemen masyarakat, mulai dari tokoh adat, pemuda, hingga perwakilan perempuan, diundang untuk memberikan masukan dalam musyawarah desa yang bertujuan untuk menyusun Rencana Pembangunan Jangka Menengah Desa (RPJMDes) periode 2026-2032. Acara berlangsung dengan lancar dan menghasilkan beberapa poin penting untuk kemajuan desa.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-berita-2">
+        <div class="modal-content modal-berita">
+            <!-- Konten Berita 2 -->
+        </div>
+    </div>
+    <div class="modal" id="modal-berita-3">
+        <div class="modal-content modal-berita">
+            <!-- Konten Berita 3 -->
+        </div>
+    </div>
+    <div class="modal" id="modal-berita-4">
+        <div class="modal-content modal-berita">
+            <!-- Konten Berita 4 -->
+        </div>
+    </div>
+    <div class="modal" id="modal-berita-5">
+        <div class="modal-content modal-berita">
+            <!-- Konten Berita 5 -->
+        </div>
+    </div>
+
+    <!-- Modal Pengaduan -->
+    <div class="modal" id="modal-pengaduan">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Form Pengaduan Online</h3>
+                <button class="modal-close" data-modal-close>&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="pengaduan-form">
+                    <div class="form-group">
+                        <label for="nama-pengaduan">Nama Lengkap</label>
+                        <input type="text" id="nama-pengaduan" name="nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-pengaduan">Email</label>
+                        <input type="email" id="email-pengaduan" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="telepon-pengaduan">No. Telepon</label>
+                        <input type="tel" id="telepon-pengaduan" name="telepon" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="kategori-pengaduan">Kategori</label>
+                        <select id="kategori-pengaduan" name="kategori" required>
+                            <option value="">Pilih Kategori</option>
+                            <option value="infrastruktur">Infrastruktur</option>
+                            <option value="layanan">Layanan Publik</option>
+                            <option value="lingkungan">Lingkungan</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan-pengaduan">Isi Pengaduan</label>
+                        <textarea id="pesan-pengaduan" name="pesan" rows="5" required placeholder="Jelaskan pengaduan Anda dengan detail..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim Pengaduan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/components/navbar.js"></script>
+    <script src="../assets/js/components/modal.js"></script>
+    <script src="../assets/js/components/forms.js"></script>
+</body>
+</html>

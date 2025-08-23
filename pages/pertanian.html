@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pertanian di Desa Belor. Jelajahi komoditas unggulan, kalender tanam, dan program dukungan untuk petani.">
+    <meta name="keywords" content="Pertanian Desa Belor, komoditas padi, hortikultura, peternakan, kalender tanam">
+    <meta name="author" content="Pemerintah Desa Belor">
+    
+    <title>Pertanian - Desa Belor</title>
+    <link rel="icon" type="image/png" href="../assets/image/logodesa.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components/navbar.css">
+    <link rel="stylesheet" href="../assets/css/components/footer.css">
+    <link rel="stylesheet" href="../assets/css/components/modal.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/pages/pertanian.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-brand">
+                <img src="../assets/image/logodesa.png" alt="Logo Desa Belor" class="nav-logo">
+                <div class="nav-text">
+                    <h3>Desa Belor</h3>
+                    <p>Kabupaten [Nama Kabupaten]</p>
+                </div>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Beranda</a>
+                <a href="./profil.html" class="nav-link">Profil Desa</a>
+                <a href="./pemerintahan.html" class="nav-link">Pemerintahan</a>
+                <a href="./layanan.html" class="nav-link">Layanan</a>
+                <a href="./pertanian.html" class="nav-link active">Pertanian</a>
+                <a href="./berita.html" class="nav-link">Berita</a>
+                <a href="./galeri.html" class="nav-link">Galeri</a>
+                <a href="./kontak.html" class="nav-link">Kontak</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Potensi Pertanian Desa Belor</h1>
+            <p>Tanah subur dan semangat petani adalah kekuatan utama kami.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Komoditas Unggulan Section -->
+        <section id="komoditas" class="section">
+            <div class="container">
+                <h2 class="section-title">Komoditas Unggulan</h2>
+                <div class="komoditas-grid">
+                    <div class="potential-card">
+                        <div class="potential-image">
+                            <img src="../assets/image/galeri4.jpeg" alt="Pertanian Padi">
+                        </div>
+                        <div class="potential-content">
+                            <h3>Pertanian Padi</h3>
+                            <p>Sebagai lumbung pangan utama, sawah-sawah di Desa Belor menghasilkan padi berkualitas tinggi dengan sistem irigasi modern.</p>
+                        </div>
+                    </div>
+                    <div class="potential-card">
+                        <div class="potential-image">
+                            <img src="../assets/image/galeri5.jpg" alt="Hortikultura">
+                        </div>
+                        <div class="potential-content">
+                            <h3>Hortikultura</h3>
+                            <p>Beraneka ragam sayuran dan buah-buahan segar dibudidayakan, mendukung ketahanan pangan dan gizi masyarakat lokal.</p>
+                        </div>
+                    </div>
+                    <div class="potential-card">
+                        <div class="potential-image">
+                            <img src="../assets/image/galeri6.jpg" alt="Peternakan">
+                        </div>
+                        <div class="potential-content">
+                            <h3>Peternakan</h3>
+                            <p>Usaha peternakan sapi, kambing, dan unggas menjadi sumber pendapatan alternatif dan penyedia protein hewani bagi warga.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kalender Tanam Section -->
+        <section id="kalender" class="section bg-gray-50">
+            <div class="container">
+                <h2 class="section-title">Contoh Kalender Tanam</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Bulan</th>
+                                <th>Padi</th>
+                                <th>Jagung</th>
+                                <th>Sayuran Daun</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Januari - Maret</td>
+                                <td class="tanam">Tanam</td>
+                                <td>-</td>
+                                <td class="panen">Panen</td>
+                            </tr>
+                            <tr>
+                                <td>April - Juni</td>
+                                <td class="panen">Panen</td>
+                                <td class="tanam">Tanam</td>
+                                <td class="tanam">Tanam</td>
+                            </tr>
+                            <tr>
+                                <td>Juli - September</td>
+                                <td>-</td>
+                                <td class="panen">Panen</td>
+                                <td class="panen">Panen</td>
+                            </tr>
+                            <tr>
+                                <td>Oktober - Desember</td>
+                                <td class="tanam">Tanam</td>
+                                <td>-</td>
+                                <td class="tanam">Tanam</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Petani Section -->
+        <section id="program" class="section">
+            <div class="container">
+                <h2 class="section-title">Program & Dukungan Petani</h2>
+                <div class="program-list">
+                    <div class="program-item">
+                        <h3>Kelompok Tani "Sido Makmur"</h3>
+                        <p>Wadah bagi para petani untuk berbagi ilmu, pengalaman, dan mendapatkan akses lebih mudah terhadap bantuan pemerintah.</p>
+                    </div>
+                    <div class="program-item">
+                        <h3>Bantuan Bibit Unggul</h3>
+                        <p>Pemerintah desa secara rutin menyalurkan bantuan bibit unggul padi dan jagung untuk meningkatkan hasil panen.</p>
+                    </div>
+                    <div class="program-item">
+                        <h3>Penyuluhan Rutin</h3>
+                        <p>Bekerja sama dengan Dinas Pertanian, desa mengadakan penyuluhan tentang teknik pertanian modern dan penanganan hama.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeri Section -->
+        <section id="galeri-pertanian" class="section bg-gray-50">
+            <div class="container">
+                <h2 class="section-title">Galeri Pertanian</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="../assets/image/galeri1.jpg" alt="Galeri Pertanian 1"></div>
+                    <div class="gallery-item"><img src="../assets/image/galeri2.jpg" alt="Galeri Pertanian 2"></div>
+                    <div class="gallery-item"><img src="../assets/image/galeri3.jpg" alt="Galeri Pertanian 3"></div>
+                    <div class="gallery-item"><img src="../assets/image/galeri4.jpeg" alt="Galeri Pertanian 4"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <div class="footer-brand">
+                            <img src="../assets/image/logodesa.png" alt="Logo Desa Belor">
+                            <h3>Desa Belor</h3>
+                        </div>
+                        <p>Website resmi Desa Belor yang menyediakan informasi lengkap tentang pemerintahan, layanan publik, dan potensi desa.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook"><span>📘</span></a>
+                            <a href="#" class="social-link" aria-label="Instagram"><span>📷</span></a>
+                            <a href="#" class="social-link" aria-label="WhatsApp"><span>💬</span></a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Menu Utama</h4>
+                        <ul class="footer-links">
+                            <li><a href="./profil.html">Profil Desa</a></li>
+                            <li><a href="./pemerintahan.html">Pemerintahan</a></li>
+                            <li><a href="./layanan.html">Layanan</a></li>
+                            <li><a href="./pertanian.html">Pertanian</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Informasi</h4>
+                        <ul class="footer-links">
+                            <li><a href="./berita.html">Berita</a></li>
+                            <li><a href="./galeri.html">Galeri</a></li>
+                            <li><a href="./kontak.html">Kontak</a></li>
+                            <li><a href="#" data-modal-open="modal-pengaduan">Pengaduan</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Kontak Kami</h4>
+                        <div class="contact-info">
+                            <p>📍 Jl. Raya Desa Belor No. XX<br>Kec. [Nama Kecamatan]<br>[Nama Kabupaten], [Kode Pos]</p>
+                            <p>📞 (0XXX) XXX-XXXX</p>
+                            <p>✉️ desabelor@email.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Desa Belor. Seluruh hak cipta dilindungi.</p>
+                    <p>Dikembangkan dengan ❤️ untuk kemajuan desa</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Pengaduan -->
+    <div class="modal" id="modal-pengaduan">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Form Pengaduan Online</h3>
+                <button class="modal-close" data-modal-close>&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="pengaduan-form">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="telepon">No. Telepon</label>
+                        <input type="tel" id="telepon" name="telepon" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="kategori">Kategori</label>
+                        <select id="kategori" name="kategori" required>
+                            <option value="">Pilih Kategori</option>
+                            <option value="infrastruktur">Infrastruktur</option>
+                            <option value="layanan">Layanan Publik</option>
+                            <option value="lingkungan">Lingkungan</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Isi Pengaduan</label>
+                        <textarea id="pesan" name="pesan" rows="5" required placeholder="Jelaskan pengaduan Anda dengan detail..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim Pengaduan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/components/navbar.js"></script>
+    <script src="../assets/js/components/modal.js"></script>
+    <script src="../assets/js/components/forms.js"></script>
+</body>
+</html>

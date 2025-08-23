@@ -1,0 +1,144 @@
+/* ===========================
+   LAYANAN PAGE STYLES
+   =========================== */
+
+/* Page Header (using profil.css as base) */
+.page-header {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: var(--space-12) 0;
+    text-align: center;
+    margin-top: 70px; /* Offset for fixed navbar */
+}
+
+.page-header h1 {
+    font-size: var(--font-size-4xl);
+    color: var(--white);
+    margin-bottom: var(--space-2);
+}
+
+.page-header p {
+    font-size: var(--font-size-lg);
+    color: var(--gray-200);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.main-content .section:first-child {
+    padding-top: var(--space-16);
+}
+
+/* Alur Pelayanan Section */
+.flow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+    .flow-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.flow-step {
+    text-align: center;
+    max-width: 220px;
+}
+
+.flow-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-green);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    margin: 0 auto var(--space-4);
+}
+
+.flow-arrow {
+    font-size: 2rem;
+    color: var(--primary-green);
+    transform: rotate(90deg);
+}
+
+@media (min-width: 768px) {
+    .flow-arrow {
+        transform: rotate(0);
+        margin-top: 40px;
+    }
+}
+
+/* Daftar Layanan Section */
+.layanan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-6);
+}
+
+.service-item {
+    text-align: center;
+}
+
+.service-item .service-icon {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: var(--space-4);
+}
+
+/* FAQ Section */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-5) 0;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-slow), padding var(--transition-slow);
+}
+
+.faq-answer p {
+    padding: 0 0 var(--space-5);
+    margin: 0;
+    color: var(--gray-700);
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px; /* Adjust as needed */
+}
+
+.faq-icon {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-light);
+    transition: transform var(--transition-base);
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}

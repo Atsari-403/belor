@@ -1,0 +1,138 @@
+/* ===========================
+   BERITA PAGE STYLES
+   =========================== */
+
+/* Page Header */
+.page-header {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: var(--space-12) 0;
+    text-align: center;
+    margin-top: 70px; /* Offset for fixed navbar */
+}
+
+.page-header h1 {
+    font-size: var(--font-size-4xl);
+    color: var(--white);
+    margin-bottom: var(--space-2);
+}
+
+.page-header p {
+    font-size: var(--font-size-lg);
+    color: var(--gray-200);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.main-content .container {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-16);
+}
+
+/* Berita Layout */
+.berita-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+}
+
+@media (min-width: 1024px) {
+    .berita-layout {
+        grid-template-columns: 3fr 1fr;
+    }
+}
+
+/* Featured News */
+.featured-news-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    margin-bottom: var(--space-12);
+    overflow: hidden;
+}
+
+.featured-news-card .news-image {
+    height: 400px;
+}
+
+/* News List */
+.list-title {
+    margin-bottom: var(--space-8);
+    border-bottom: 2px solid var(--gray-200);
+    padding-bottom: var(--space-4);
+}
+
+.news-list-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+}
+
+@media (min-width: 768px) {
+    .news-list-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Using .news-card styles from cards.css */
+
+/* Sidebar */
+.berita-sidebar .widget {
+    background-color: var(--gray-50);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-8);
+}
+
+.widget-title {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-4);
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid var(--gray-300);
+}
+
+.widget-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget-list li {
+    margin-bottom: var(--space-2);
+}
+
+.widget-list li:last-child {
+    margin-bottom: 0;
+}
+
+.widget-list a {
+    text-decoration: none;
+    color: var(--gray-700);
+    transition: color var(--transition-fast);
+}
+
+.widget-list a:hover {
+    color: var(--primary-green);
+}
+
+/* News Modal Styles */
+.modal-berita .modal-header h3 {
+    font-size: var(--font-size-2xl);
+    line-height: var(--line-height-tight);
+}
+
+.modal-berita-img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-6);
+}
+
+.modal-berita .modal-body p {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    color: var(--gray-700);
+    margin-bottom: var(--space-4);
+}

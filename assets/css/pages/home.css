@@ -1,0 +1,128 @@
+/* ===========================
+   HOME PAGE STYLES
+   =========================== */
+
+/* Quick Services Section */
+.quick-services {
+    padding: var(--space-16) 0;
+    background-color: var(--gray-50);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--space-6);
+}
+
+@media (min-width: 640px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Latest News Section */
+.latest-news {
+    padding: var(--space-16) 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-8);
+}
+
+.section-header .section-title {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.section-header .section-title::after {
+    left: 0;
+    margin-left: 0;
+    margin-top: var(--space2);
+    transform: translateX(0);
+}
+
+.view-all {
+    display: inline-block;
+    font-weight: var(--font-weight-medium);
+    color: var(--primary-green);
+    text-decoration: none;
+    border: 1px solid var(--gray-200);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-base);
+}
+
+.view-all:hover {
+    background-color: var(--primary-green);
+    color: var(--white);
+    border-color: var(--primary-green);
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--space-8);
+}
+
+@media (min-width: 768px) {
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .news-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Village Potential Section */
+.village-potential {
+    padding: var(--space-16) 0;
+    background-color: var(--gray-50);
+}
+
+.potential-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--space-8);
+}
+
+@media (min-width: 1024px) {
+    .potential-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Statistics Section */
+.statistics {
+    padding: var(--space-16) 0;
+    background-color: var(--white);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+}
+
+@media (min-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}

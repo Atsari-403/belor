@@ -1,0 +1,183 @@
+/* ===========================
+   CARDS COMPONENT
+   =========================== */
+
+/* Service Cards */
+.service-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8);
+    text-align: center;
+    box-shadow: var(--shadow-base);
+    transition: all var(--transition-base);
+    border: 1px solid var(--gray-200);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-green);
+}
+
+.service-icon {
+    margin-bottom: var(--space-6);
+    color: var(--primary-green);
+}
+
+.service-card h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-2);
+}
+
+.service-card p {
+    color: var(--gray-600);
+    margin-bottom: var(--space-4);
+    min-height: 60px;
+}
+
+.service-link {
+    font-weight: var(--font-weight-medium);
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+.service-link::after {
+    content: ' →';
+}
+
+/* News Cards */
+.news-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-base);
+    overflow: hidden;
+    transition: all var(--transition-base);
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.news-image {
+    height: 200px;
+    background-color: var(--gray-200);
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: var(--space-6);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-date {
+    font-size: var(--font-size-xs);
+    color: var(--gray-500);
+    margin-bottom: var(--space-2);
+}
+
+.news-content h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-3);
+    line-height: var(--line-height-snug);
+}
+
+.news-content p {
+    color: var(--gray-600);
+    margin-bottom: var(--space-4);
+    flex-grow: 1;
+}
+
+.news-link {
+    font-weight: var(--font-weight-medium);
+    color: var(--primary-green);
+}
+
+/* Potential Cards */
+.potential-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-base);
+    overflow: hidden;
+    transition: all var(--transition-base);
+}
+
+.potential-card:hover {
+    box-shadow: var(--shadow-xl);
+}
+
+.potential-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.potential-content {
+    padding: var(--space-6);
+}
+
+.potential-content h3 {
+    font-size: var(--font-size-xl);
+    color: var(--primary-green);
+}
+
+.potential-content p {
+    margin-bottom: var(--space-4);
+}
+
+.potential-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.potential-features li {
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: var(--space-2);
+}
+
+.potential-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--success);
+    font-weight: bold;
+}
+
+/* Statistics Cards */
+.stat-card {
+    background: linear-gradient(135deg, var(--primary-green), var(--primary-dark));
+    color: var(--white);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-2);
+    line-height: 1;
+}
+
+.stat-number {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    margin: 0;
+}
+
+.stat-card p {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    opacity: 0.9;
+}

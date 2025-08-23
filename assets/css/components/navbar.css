@@ -1,0 +1,293 @@
+/* ===========================
+   NAVBAR COMPONENT
+   =========================== */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-sm);
+    z-index: var(--z-fixed);
+    transition: all var(--transition-base);
+}
+
+.navbar.scrolled {
+    box-shadow: var(--shadow-md);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.nav-container {
+    max-width: var(--container-xl);
+    margin: 0 auto;
+    padding: 0 var(--space-4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+/* Brand Section */
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    text-decoration: none;
+    color: var(--gray-800);
+    transition: color var(--transition-fast);
+}
+
+.nav-brand:hover {
+    color: var(--primary-green);
+}
+
+.nav-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    border-radius: var(--radius-md);
+}
+
+.nav-text h3 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1;
+    margin: 0;
+    color: var(--primary-green);
+}
+
+.nav-text p {
+    font-size: var(--font-size-xs);
+    color: var(--gray-600);
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    list-style: none;
+}
+
+.nav-link {
+    position: relative;
+    display: block;
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--gray-700);
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+    color: var(--primary-green);
+    background-color: var(--gray-50);
+}
+
+.nav-link.active {
+    color: var(--primary-green);
+    background-color: rgba(46, 125, 50, 0.1);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: var(--space-4);
+    right: var(--space-4);
+    height: 2px;
+    background-color: var(--primary-green);
+    border-radius: var(--radius-full);
+}
+
+/* Mobile Toggle Button */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: var(--z-fixed);
+}
+
+.nav-toggle span {
+    width: 100%;
+    height: 2px;
+    background-color: var(--gray-700);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-base);
+    transform-origin: center;
+}
+
+.nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Styles */
+@media (max-width: 1023px) {
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        border-top: 1px solid var(--gray-200);
+        box-shadow: var(--shadow-lg);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: var(--space-4) var(--space-4) var(--space-6);
+        transform: translateY(-100vh);
+        opacity: 0;
+        visibility: hidden;
+        transition: all var(--transition-base);
+    }
+    
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-link {
+        padding: var(--space-4);
+        font-size: var(--font-size-base);
+        border-bottom: 1px solid var(--gray-100);
+        border-radius: 0;
+    }
+    
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+    
+    .nav-link.active::after {
+        display: none;
+    }
+    
+    .nav-link.active {
+        background-color: var(--primary-green);
+        color: var(--white);
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .nav-container {
+        padding: 0 var(--space-6);
+    }
+    
+    .nav-text h3 {
+        font-size: var(--font-size-xl);
+    }
+    
+    .nav-text p {
+        font-size: var(--font-size-sm);
+    }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1280px) {
+    .nav-container {
+        padding: 0 var(--space-8);
+    }
+    
+    .nav-menu {
+        gap: var(--space-1);
+    }
+    
+    .nav-link {
+        padding: var(--space-3) var(--space-5);
+        font-size: var(--font-size-base);
+    }
+}
+
+/* Accessibility Improvements */
+.nav-link:focus {
+    outline: 2px solid var(--primary-green);
+    outline-offset: 2px;
+}
+
+.nav-toggle:focus {
+    outline: 2px solid var(--primary-green);
+    outline-offset: 2px;
+}
+
+/* Animation for smooth scrolling offset */
+html {
+    scroll-padding-top: 90px; /* Account for fixed navbar height */
+}
+
+/* Navbar backdrop blur support check */
+@supports (backdrop-filter: blur(10px)) {
+    .navbar.scrolled {
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .navbar {
+        border-bottom: 2px solid var(--gray-800);
+    }
+    
+    .nav-link {
+        border: 1px solid transparent;
+    }
+    
+    .nav-link:hover,
+    .nav-link:focus {
+        border-color: var(--primary-green);
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .navbar,
+    .nav-menu,
+    .nav-link,
+    .nav-toggle span {
+        transition: none;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar {
+        position: static;
+        box-shadow: none;
+        border-bottom: 1px solid var(--gray-400);
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+    
+    .nav-toggle {
+        display: none;
+    }
+}

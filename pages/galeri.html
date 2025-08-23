@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeri foto Desa Belor. Lihat dokumentasi kegiatan warga, pembangunan, dan keindahan alam desa.">
+    <meta name="keywords" content="Galeri Desa Belor, foto kegiatan, dokumentasi desa">
+    <meta name="author" content="Pemerintah Desa Belor">
+    
+    <title>Galeri - Desa Belor</title>
+    <link rel="icon" type="image/png" href="../assets/image/logodesa.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components/navbar.css">
+    <link rel="stylesheet" href="../assets/css/components/footer.css">
+    <link rel="stylesheet" href="../assets/css/components/modal.css">
+    <link rel="stylesheet" href="../assets/css/pages/galeri.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-brand">
+                <img src="../assets/image/logodesa.png" alt="Logo Desa Belor" class="nav-logo">
+                <div class="nav-text">
+                    <h3>Desa Belor</h3>
+                    <p>Kabupaten [Nama Kabupaten]</p>
+                </div>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">Beranda</a>
+                <a href="./profil.html" class="nav-link">Profil Desa</a>
+                <a href="./pemerintahan.html" class="nav-link">Pemerintahan</a>
+                <a href="./layanan.html" class="nav-link">Layanan</a>
+                <a href="./pertanian.html" class="nav-link">Pertanian</a>
+                <a href="./berita.html" class="nav-link">Berita</a>
+                <a href="./galeri.html" class="nav-link active">Galeri</a>
+                <a href="./kontak.html" class="nav-link">Kontak</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Galeri Foto Desa Belor</h1>
+            <p>Momen dan kenangan dari berbagai kegiatan dan sudut desa kami.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="btn btn-primary">Semua</button>
+                <button class="btn btn-secondary">Kegiatan Warga</button>
+                <button class="btn btn-secondary">Pembangunan</button>
+                <button class="btn btn-secondary">Pertanian</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item" data-modal-open="modal-galeri-1"><img src="../assets/image/galeri1.jpg" alt="Galeri 1"></div>
+                <div class="gallery-item" data-modal-open="modal-galeri-2"><img src="../assets/image/galeri2.jpg" alt="Galeri 2"></div>
+                <div class="gallery-item" data-modal-open="modal-galeri-3"><img src="../assets/image/galeri3.jpg" alt="Galeri 3"></div>
+                <div class="gallery-item" data-modal-open="modal-galeri-4"><img src="../assets/image/galeri4.jpeg" alt="Galeri 4"></div>
+                <div class="gallery-item" data-modal-open="modal-galeri-5"><img src="../assets/image/galeri5.jpg" alt="Galeri 5"></div>
+                <div class="gallery-item" data-modal-open="modal-galeri-6"><img src="../assets/image/galeri6.jpg" alt="Galeri 6"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <div class="footer-brand">
+                            <img src="../assets/image/logodesa.png" alt="Logo Desa Belor">
+                            <h3>Desa Belor</h3>
+                        </div>
+                        <p>Website resmi Desa Belor yang menyediakan informasi lengkap tentang pemerintahan, layanan publik, dan potensi desa.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Menu Utama</h4>
+                        <ul class="footer-links">
+                            <li><a href="./profil.html">Profil Desa</a></li>
+                            <li><a href="./pemerintahan.html">Pemerintahan</a></li>
+                            <li><a href="./layanan.html">Layanan</a></li>
+                            <li><a href="./pertanian.html">Pertanian</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Informasi</h4>
+                        <ul class="footer-links">
+                            <li><a href="./berita.html">Berita</a></li>
+                            <li><a href="./galeri.html">Galeri</a></li>
+                            <li><a href="./kontak.html">Kontak</a></li>
+                            <li><a href="#" data-modal-open="modal-pengaduan">Pengaduan</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Kontak Kami</h4>
+                        <div class="contact-info">
+                            <p>📍 Jl. Raya Desa Belor No. XX<br>Kec. [Nama Kecamatan]<br>[Nama Kabupaten], [Kode Pos]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Desa Belor. Seluruh hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="modal-galeri-1">
+        <div class="modal-content modal-gallery">
+            <button class="modal-close" data-modal-close>&times;</button>
+            <img src="../assets/image/galeri1.jpg" alt="Galeri 1 (Large)">
+            <p class="caption">Contoh Keterangan Gambar 1</p>
+        </div>
+    </div>
+    <div class="modal" id="modal-galeri-2">
+        <div class="modal-content modal-gallery">
+            <button class="modal-close" data-modal-close>&times;</button>
+            <img src="../assets/image/galeri2.jpg" alt="Galeri 2 (Large)">
+            <p class="caption">Contoh Keterangan Gambar 2</p>
+        </div>
+    </div>
+    <div class="modal" id="modal-galeri-3">
+        <div class="modal-content modal-gallery">
+            <button class="modal-close" data-modal-close>&times;</button>
+            <img src="../assets/image/galeri3.jpg" alt="Galeri 3 (Large)">
+            <p class="caption">Contoh Keterangan Gambar 3</p>
+        </div>
+    </div>
+    <div class="modal" id="modal-galeri-4">
+        <div class="modal-content modal-gallery">
+            <button class="modal-close" data-modal-close>&times;</button>
+            <img src="../assets/image/galeri4.jpeg" alt="Galeri 4 (Large)">
+            <p class="caption">Contoh Keterangan Gambar 4</p>
+        </div>
+    </div>
+    <div class="modal" id="modal-galeri-5">
+        <div class="modal-content modal-gallery">
+            <button class="modal-close" data-modal-close>&times;</button>
+            <img src="../assets/image/galeri5.jpg" alt="Galeri 5 (Large)">
+            <p class="caption">Contoh Keterangan Gambar 5</p>
+        </div>
+    </div>
+    <div class="modal" id="modal-galeri-6">
+        <div class="modal-content modal-gallery">
+            <button class="modal-close" data-modal-close>&times;</button>
+            <img src="../assets/image/galeri6.jpg" alt="Galeri 6 (Large)">
+            <p class="caption">Contoh Keterangan Gambar 6</p>
+        </div>
+    </div>
+    <div class="modal" id="modal-pengaduan">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Form Pengaduan Online</h3>
+                <button class="modal-close" data-modal-close>&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="pengaduan-form">
+                    <div class="form-group">
+                        <label for="nama-pengaduan">Nama Lengkap</label>
+                        <input type="text" id="nama-pengaduan" name="nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-pengaduan">Email</label>
+                        <input type="email" id="email-pengaduan" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="telepon-pengaduan">No. Telepon</label>
+                        <input type="tel" id="telepon-pengaduan" name="telepon" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="kategori-pengaduan">Kategori</label>
+                        <select id="kategori-pengaduan" name="kategori" required>
+                            <option value="">Pilih Kategori</option>
+                            <option value="infrastruktur">Infrastruktur</option>
+                            <option value="layanan">Layanan Publik</option>
+                            <option value="lingkungan">Lingkungan</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan-pengaduan">Isi Pengaduan</label>
+                        <textarea id="pesan-pengaduan" name="pesan" rows="5" required placeholder="Jelaskan pengaduan Anda dengan detail..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim Pengaduan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/components/navbar.js"></script>
+    <script src="../assets/js/components/modal.js"></script>
+    <script src="../assets/js/components/forms.js"></script>
+</body>
+</html>

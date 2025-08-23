@@ -1,0 +1,127 @@
+/* ===========================
+   PERTANIAN PAGE STYLES
+   =========================== */
+
+/* Page Header (using profil.css as base) */
+.page-header {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: var(--space-12) 0;
+    text-align: center;
+    margin-top: 70px; /* Offset for fixed navbar */
+}
+
+.page-header h1 {
+    font-size: var(--font-size-4xl);
+    color: var(--white);
+    margin-bottom: var(--space-2);
+}
+
+.page-header p {
+    font-size: var(--font-size-lg);
+    color: var(--gray-200);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.main-content .section:first-child {
+    padding-top: var(--space-16);
+}
+
+/* Komoditas Section */
+.komoditas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-8);
+}
+
+/* Using .potential-card styles from cards.css */
+
+/* Kalender Tanam Section */
+.table-container {
+    overflow-x: auto;
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-base);
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table-container th, .table-container td {
+    padding: var(--space-4) var(--space-5);
+    border: 1px solid var(--gray-200);
+}
+
+.table-container thead {
+    background-color: var(--primary-dark);
+    color: var(--white);
+}
+
+.table-container .tanam {
+    background-color: rgba(46, 125, 50, 0.2);
+    font-weight: var(--font-weight-medium);
+}
+
+.table-container .panen {
+    background-color: rgba(255, 179, 0, 0.2);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Program Petani Section */
+.program-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.program-item {
+    background-color: var(--white);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-base);
+    margin-bottom: var(--space-6);
+    border-left: 4px solid var(--secondary-yellow);
+}
+
+.program-item:last-child {
+    margin-bottom: 0;
+}
+
+.program-item h3 {
+    margin-top: 0;
+    color: var(--primary-dark);
+}
+
+/* Galeri Pertanian Section */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.gallery-item {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    height: 250px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-base);
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}

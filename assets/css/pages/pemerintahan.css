@@ -1,0 +1,141 @@
+/* ===========================
+   PEMERINTAHAN PAGE STYLES
+   =========================== */
+
+/* Page Header (using profil.css as base) */
+.page-header {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: var(--space-12) 0;
+    text-align: center;
+    margin-top: 70px; /* Offset for fixed navbar */
+}
+
+.page-header h1 {
+    font-size: var(--font-size-4xl);
+    color: var(--white);
+    margin-bottom: var(--space-2);
+}
+
+.page-header p {
+    font-size: var(--font-size-lg);
+    color: var(--gray-200);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.main-content .section:first-child {
+    padding-top: var(--space-16);
+}
+
+/* Aparatur Desa Section */
+.aparatur-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-8);
+}
+
+.aparatur-card {
+    text-align: center;
+    background-color: var(--white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-base);
+    overflow: hidden;
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.aparatur-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.aparatur-img {
+    width: 100%;
+    height: 300px;
+}
+
+.aparatur-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.aparatur-info {
+    padding: var(--space-5);
+}
+
+.aparatur-name {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-1);
+}
+
+.aparatur-jabatan {
+    color: var(--primary-green);
+    font-weight: var(--font-weight-medium);
+    margin: 0;
+}
+
+/* Lembaga Desa Section */
+.lembaga-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--space-6);
+}
+
+@media (min-width: 768px) {
+    .lembaga-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.lembaga-grid .card {
+    text-align: center;
+}
+
+.lembaga-grid .card h3 {
+    color: var(--primary-dark);
+}
+
+/* Transparansi Anggaran Section */
+.anggaran-container {
+    background-color: var(--white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--space-10);
+    border: 1px solid var(--gray-200);
+}
+
+@media (min-width: 768px) {
+    .anggaran-container {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+    }
+}
+
+.anggaran-summary ul {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-4) 0 0;
+}
+
+.anggaran-summary li {
+    margin-bottom: var(--space-2);
+}
+
+.anggaran-download {
+    margin-top: var(--space-6);
+}
+
+@media (min-width: 768px) {
+    .anggaran-download {
+        margin-top: 0;
+        padding-left: var(--space-8);
+    }
+}
