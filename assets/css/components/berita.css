@@ -175,7 +175,7 @@
 .btn-success {
   background: linear-gradient(135deg, #28a745, #20c997);
   border: none;
-  font-weight: 600;
+  font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: all 0.3s ease;
@@ -355,6 +355,11 @@
 .btn-success:focus {
   outline: 2px solid #28a745;
   outline-offset: 2px;
+}
+
+.btn-success:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 /* Print Styles */
