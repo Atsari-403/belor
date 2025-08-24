@@ -1,121 +1,309 @@
-/* ===========================
-   HERO COMPONENT
-   =========================== */
-
+/* Hero Section Styling */
 .hero {
     position: relative;
-    height: 100vh;
-    min-height: 600px;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    color: var(--white);
-    background: url('../../image/bg.jpg') no-repeat center center/cover;
-    padding-top: 70px; /* Navbar height */
+    overflow: hidden;
 }
 
+/* Hero Background Pattern */
+/* .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 100px 100px;
+    pointer-events: none;
+} */
+
+/* Hero Overlay */
 .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
 
+/* Hero Content Container */
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 var(--space-4);
-    animation: fadeIn 1s ease-out;
+    padding: 80px 0;
+}
+
+/* Hero Text Section */
+.hero-text {
+    color: white;
+    animation: slideInLeft 1s ease-out;
 }
 
 .hero-title {
-    font-family: var(--font-family-secondary);
-    font-size: var(--font-size-5xl);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-tight);
-    margin-bottom: var(--space-4);
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    /* background: linear-gradient(45deg, #ffffff, #f0f8f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    background-clip: text;
 }
 
 .hero-subtitle {
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-light);
-    margin-bottom: var(--space-8);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    opacity: 0.95;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
+/* Hero Buttons */
 .hero-buttons {
     display: flex;
-    justify-content: center;
-    gap: var(--space-4);
-    margin-bottom: var(--space-12);
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-buttons .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.hero-buttons .btn:hover::before {
+    left: 100%;
 }
 
 .hero-buttons .btn-primary {
-    background-color: var(--primary-green);
-    border-color: var(--primary-green);
+    background: linear-gradient(135deg, #90ee90, #7dd87d);
+    color: #2c5530;
+    border: none;
+    box-shadow: 0 8px 25px rgba(144, 238, 144, 0.4);
+}
+
+.hero-buttons .btn-primary:hover {
+    background: linear-gradient(135deg, #7dd87d, #6bc96b);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(144, 238, 144, 0.6);
 }
 
 .hero-buttons .btn-secondary {
-    background-color: transparent;
-    border-color: var(--white);
-    color: var(--white);
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255,255,255,0.8);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
 .hero-buttons .btn-secondary:hover {
-    background-color: var(--white);
-    color: var(--primary-dark);
+    background: rgba(255,255,255,0.1);
+    border-color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.3);
 }
 
+/* Responsive fix for hero buttons */
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column !important;
+    gap: 12px !important;
+    align-items: center !important;
+  }
+  .hero-buttons .btn {
+    width: 100%;
+    padding: 10px 0 !important;
+    font-size: 1rem !important;
+    min-width: unset;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-buttons .btn {
+    padding: 8px 0 !important;
+    font-size: 0.97rem !important;
+  }
+}
+
+/* Hero Stats */
 .hero-stats {
-    display: flex;
-    justify-content: space-around;
-    gap: var(--space-4);
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: var(--space-6);
-    border-radius: var(--radius-lg);
-    max-width: 700px;
-    margin: 0 auto;
+    animation: slideInRight 1s ease-out;
 }
 
 .stat-item {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px 25px;
     text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-item::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: rotate(-45deg);
+    transition: all 0.6s ease;
+    opacity: 0;
+}
+
+.stat-item:hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translate(50%, 50%);
+}
+
+.stat-item:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
 .stat-item h3 {
-    font-size: var(--font-size-4xl);
-    font-weight: var(--font-weight-bold);
-    color: var(--white);
-    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #90ee90;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 1;
 }
 
 .stat-item p {
-    font-size: var(--font-size-sm);
-    color: var(--gray-200);
+    font-size: 1.1rem;
+    color: white;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
 }
 
+/* Animations */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Counter Animation Class */
+.counting {
+    animation: countUp 0.6s ease-out;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
+    .hero {
+        min-height: 90vh;
+    }
+    
+    .hero-content {
+        padding: 60px 0;
+    }
+    
     .hero-title {
-        font-size: var(--font-size-4xl);
+        font-size: 2.2rem !important;
     }
+    
     .hero-subtitle {
-        font-size: var(--font-size-lg);
+        font-size: 1.1rem !important;
+        margin-bottom: 30px;
     }
-    .hero-stats {
-        flex-direction: column;
-        gap: var(--space-6);
+    
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
     }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        padding: 40px 0;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem !important;
+        line-height: 1.3;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem !important;
+    }
+}
+
+/* Loading Animation untuk Stats */
+.stat-item.loading h3::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(144, 238, 144, 0.3);
+    border-top: 2px solid #90ee90;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

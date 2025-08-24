@@ -1,0 +1,59 @@
+/* assets/css/components/aparatur.css */
+
+.aparatur-section {
+  padding: 80px 0;
+  background-color: #f8f9fa; /* A light grey background to separate it from other sections */
+}
+
+.aparatur-section .section-title {
+  color: #212529; /* Dark color for the title */
+}
+
+.aparatur-section .lead {
+  color: #6c757d; /* Muted color for the subtitle */
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aparatur-card {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 1rem; /* 16px */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  height: 100%;
+}
+
+.aparatur-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+.aparatur-card .card-img-top {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: top; /* Focus on the top of the image */
+}
+
+.aparatur-card .card-body {
+  padding: 1.5rem; /* 24px */
+}
+
+.aparatur-card .card-title {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 0.5rem; /* 8px */
+}
+
+.aparatur-card .card-subtitle {
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+  color: #28a745; /* Bootstrap primary blue for the position */
+  margin-bottom: 1rem; /* 16px */
+}
+
+
+

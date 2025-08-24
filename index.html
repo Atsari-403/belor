@@ -1,366 +1,872 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website resmi Desa Belor - Informasi lengkap tentang pemerintahan, layanan, dan potensi pertanian desa">
-    <meta name="keywords" content="Desa Belor, pertanian, pemerintah desa, layanan publik">
-    <meta name="author" content="Pemerintah Desa Belor">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Website resmi Desa Belor - Informasi lengkap tentang pemerintahan, layanan, dan potensi pertanian desa"
+    />
+    <meta
+      name="keywords"
+      content="Desa Belor, pertanian, pemerintah desa, layanan publik"
+    />
+    <meta name="author" content="Pemerintah Desa Belor" />
+
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Desa Belor - Website Resmi">
-    <meta property="og:description" content="Portal informasi resmi Desa Belor dengan fokus pertanian dan pembangunan berkelanjutan">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://desabelor.github.io">
-    <meta property="og:image" content="./assets/image/bg.jpg">
-    
+    <meta property="og:title" content="Desa Belor - Website Resmi" />
+    <meta
+      property="og:description"
+      content="Portal informasi resmi Desa Belor dengan fokus pertanian dan pembangunan berkelanjutan"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://desabelor.github.io" />
+    <meta property="og:image" content="./assets/image/bg.jpg" />
+
     <title>Beranda - Desa Belor</title>
-    <link rel="icon" type="image/png" href="./assets/image/logodesa.png">
-    
+    <link rel="icon" type="image/png" href="./assets/image/logodesa.png" />
+
     <!-- CSS Files -->
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/components/navbar.css">
-    <link rel="stylesheet" href="./assets/css/components/hero.css">
-    <link rel="stylesheet" href="./assets/css/components/cards.css">
-    <link rel="stylesheet" href="./assets/css/components/footer.css">
-    <link rel="stylesheet" href="./assets/css/components/modal.css">
-    <link rel="stylesheet" href="./assets/css/pages/home.css">
+    <link rel="stylesheet" href="./assets/css/components/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/components/quickservices.css" />
+    <link rel="stylesheet" href="./assets/css/components/hero.css" />
+    <link rel="stylesheet" href="./assets/css/components/berita.css" />
+    <link rel="stylesheet" href="./assets/css/components/galeri.css" />
+    <link rel="stylesheet" href="./assets/css/components/aparatur.css" />
+    <link rel="stylesheet" href="./assets/css/components/footer.css" />
 
-
-     <!-- <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-    /> -->
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <img src="./assets/image/logodesa.png" alt="Logo Desa Belor" class="nav-logo">
-                <div class="nav-text">
-                    <h3>Desa Belor</h3>
-                    <p>Kabupaten [Nama Kabupaten]</p>
-                </div>
-            </div>
-            
-            <div class="nav-menu" id="nav-menu">
-                <a href="./index.html" class="nav-link active">Beranda</a>
-                <a href="./pages/profil.html" class="nav-link">Profil Desa</a>
-                <a href="./pages/pemerintahan.html" class="nav-link">Pemerintahan</a>
-                <a href="./pages/layanan.html" class="nav-link">Layanan</a>
-                <a href="./pages/pertanian.html" class="nav-link">Pertanian</a>
-                <a href="./pages/berita.html" class="nav-link">Berita</a>
-                <a href="./pages/galeri.html" class="nav-link">Galeri</a>
-                <a href="./pages/kontak.html" class="nav-link">Kontak</a>
-            </div>
-            
-            <div class="nav-toggle" id="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  </head>
+  <body>
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./assets/image/logodesa.png"
+            alt="Logo Desa Belor"
+            class="nav-logo"
+          />
+          <div class="brand-text">
+            <span class="brand-name">Desa Belor</span>
+            <span class="brand-subtitle">Kecamatan Purwoasri</span>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">
+                <i class="fas fa-home"></i>
+                <span>Beranda</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-info-circle"></i>
+                <span>Profil</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-users"></i>
+                <span>Pemerintahan</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-cogs"></i>
+                <span>Layanan</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-seedling"></i>
+                <span>Pertanian</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-newspaper"></i>
+                <span>Berita</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-images"></i>
+                <span>Galeri</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-phone"></i>
+                <span>Kontak</span>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">Selamat Datang di Desa Belor</h1>
-                <p class="hero-subtitle">Desa dengan potensi pertanian yang berkelanjutan dan masyarakat yang harmonis</p>
-                <div class="hero-buttons">
-                    <a href="./pages/profil.html" class="btn btn-primary">Profil Desa</a>
-                    <a href="./pages/layanan.html" class="btn btn-secondary">Layanan Online</a>
-                </div>
+    <section
+      class="hero"
+      id="hero"
+      style="background: url('./assets/image/bg.jpg') no-repeat center center / cover fixed"
+    >
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="row hero-content align-items-center min-vh-100">
+          <!-- Hero Text Column -->
+          <div class="col-lg-8 col-md-12">
+            <div class="hero-text text-center text-lg-start">
+              <h1 class="hero-title display-2 fw-bold mb-4">
+                Selamat Datang di Desa Belor
+              </h1>
+              <p class="hero-subtitle lead fs-4 mb-5">
+                Desa dengan potensi pertanian yang berkelanjutan dan masyarakat
+                yang harmonis dan sejahtera di Kecamatan Purwoasri
+              </p>
+              <div
+                class="hero-buttons d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start"
+              >
+                <a
+                  href="#"
+                  class="btn btn-primary btn-lg px-2 py-3"
+                >
+                  <i class="fas fa-info-circle me-2"></i>
+                  Profil Desa
+                </a>
+                <a
+                  href="#"
+                  class="btn btn-outline-light btn-lg px-4 py-3"
+                >
+                  <i class="fas fa-cogs me-2"></i>
+                  Layanan Online
+                </a>
+              </div>
             </div>
+          </div>
+
+          <!-- Hero Stats Column -->
+          <div class="col-lg-4 col-md-12 mt-5 mt-lg-0">
             <div class="hero-stats">
-                <div class="stat-item">
-                    <h3 id="population-count">0</h3>
-                    <p>Jiwa</p>
+              <div class="row g-3">
+                <div class="col-12">
+                  <div class="stat-item text-center p-4 rounded-4">
+                    <h3
+                      class="display-4 fw-bold text-success mb-2"
+                      id="population-count"
+                    >
+                      0
+                    </h3>
+                    <p class="text-uppercase fw-semibold mb-0 text-light">
+                      Jiwa
+                    </p>
+                  </div>
                 </div>
-                <div class="stat-item">
-                    <h3 id="area-size">0</h3>
-                    <p>Hektar</p>
+                <div class="col-12">
+                  <div class="stat-item text-center p-4 rounded-4">
+                    <h3
+                      class="display-4 fw-bold text-success mb-2"
+                      id="area-size"
+                    >
+                      0
+                    </h3>
+                    <p class="text-uppercase fw-semibold mb-0 text-light">
+                      Hektar
+                    </p>
+                  </div>
                 </div>
-                <div class="stat-item">
-                    <h3 id="farmer-count">0</h3>
-                    <p>Petani</p>
+                <div class="col-12">
+                  <div class="stat-item text-center p-4 rounded-4">
+                    <h3
+                      class="display-4 fw-bold text-success mb-2"
+                      id="farmer-count"
+                    >
+                      0
+                    </h3>
+                    <p class="text-uppercase fw-semibold mb-0 text-light">
+                      Petani
+                    </p>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Quick Services Section -->
-    <section class="quick-services" id="quick-services">
-        <div class="container">
-            <h2 class="section-title">Layanan Cepat</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-envelope" style="font-size: 28px;"></i>
-                    </div>
-                    <h3>Surat Keterangan</h3>
-                    <p>Layanan pembuatan surat keterangan berbagai keperluan</p>
-                    <a href="./pages/layanan.html" class="service-link">Selengkapnya</a>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                       <i class="fa-solid fa-file" style="font-size: 28px;"></i>
-                    </div>
-                    <h3>Pengaduan Online</h3>
-                    <p>Sampaikan keluhan dan saran melalui sistem online</p>
-                    <a href="./pages/kontak.html#pengaduan" class="service-link">Selengkapnya</a>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-clock" style="font-size: 28px;"></i>
-                    </div>
-                    <h3>Jam Pelayanan</h3>
-                    <p>Senin - Jumat: 08:00 - 15:00 WIB<br>Sabtu: 08:00 - 12:00 WIB</p>
-                    <a href="./pages/kontak.html" class="service-link">Info Kontak</a>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-tractor" style="font-size: 28px;"></i>
-                    </div>
-                    <h3>Info Pertanian</h3>
-                    <p>Jadwal tanam, cuaca, dan tips pertanian untuk warga</p>
-                    <a href="./pages/pertanian.html" class="service-link">Selengkapnya</a>
-                </div>
-            </div>
+    <section class="quick-services py-5" id="quick-services">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <h2 class="section-title display-4 fw-bold text-success mb-3">
+              Layanan Cepat
+            </h2>
+            <p class="lead text-muted">
+              Akses mudah ke layanan desa yang Anda butuhkan
+            </p>
+          </div>
         </div>
+
+        <div class="row g-4">
+          <!-- Service Card 1 -->
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div
+              class="service-card h-100 text-center p-4 rounded-4 border-0 shadow-sm"
+            >
+              <div class="service-icon mb-4">
+                <div
+                  class="icon-wrapper d-inline-flex align-items-center justify-content-center rounded-circle bg-success bg-opacity-10 p-3"
+                >
+                  <i class="fas fa-envelope fs-2 text-success"></i>
+                </div>
+              </div>
+              <h3 class="fw-bold mb-3 text-dark">Surat Keterangan</h3>
+              <p class="text-muted mb-4">
+                Layanan pembuatan surat keterangan berbagai keperluan
+              </p>
+              <a
+                href="#"
+                class="service-link btn btn-outline-success btn-sm rounded-pill px-4"
+              >
+                Selengkapnya
+                <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div
+              class="service-card h-100 text-center p-4 rounded-4 border-0 shadow-sm"
+            >
+              <div class="service-icon mb-4">
+                <div
+                  class="icon-wrapper d-inline-flex align-items-center justify-content-center rounded-circle bg-warning bg-opacity-10 p-3"
+                >
+                  <i class="fas fa-file fs-2 text-warning"></i>
+                </div>
+              </div>
+              <h3 class="fw-bold mb-3 text-dark">Pengaduan Online</h3>
+              <p class="text-muted mb-4">
+                Sampaikan keluhan dan saran melalui sistem online
+              </p>
+              <a
+                href="#"
+                class="service-link btn btn-outline-warning btn-sm rounded-pill px-4"
+              >
+                Selengkapnya
+                <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div
+              class="service-card h-100 text-center p-4 rounded-4 border-0 shadow-sm"
+            >
+              <div class="service-icon mb-4">
+                <div
+                  class="icon-wrapper d-inline-flex align-items-center justify-content-center rounded-circle bg-info bg-opacity-10 p-3"
+                >
+                  <i class="fas fa-clock fs-2 text-info"></i>
+                </div>
+              </div>
+              <h3 class="fw-bold mb-3 text-dark">Jam Pelayanan</h3>
+              <p class="text-muted mb-4">
+                <strong>Senin - Jumat:</strong> 08:00 - 15:00 WIB<br />
+                <strong>Sabtu:</strong> 08:00 - 12:00 WIB
+              </p>
+              <a
+                href="#"
+                class="service-link btn btn-outline-info btn-sm rounded-pill px-4"
+              >
+                Info Kontak
+                <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div
+              class="service-card h-100 text-center p-4 rounded-4 border-0 shadow-sm"
+            >
+              <div class="service-icon mb-4">
+                <div
+                  class="icon-wrapper d-inline-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 p-3"
+                >
+                  <i class="fas fa-tractor fs-2 text-primary"></i>
+                </div>
+              </div>
+              <h3 class="fw-bold mb-3 text-dark">Info Pertanian</h3>
+              <p class="text-muted mb-4">
+                Jadwal tanam, cuaca, dan tips pertanian untuk warga
+              </p>
+              <a
+                href="#"
+                class="service-link btn btn-outline-primary btn-sm rounded-pill px-4"
+              >
+                Selengkapnya
+                <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Latest News Section -->
-    <section class="latest-news" id="latest-news">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Berita Terbaru</h2>
-                <a href="./pages/berita.html" class="view-all">Lihat Semua</a>
-            </div>
-            <div class="news-grid" id="news-grid">
-                <!-- Berita akan dimuat secara dinamis -->
-                <div class="news-card placeholder">
-                    <div class="news-image">
-                        <div class="placeholder-img"></div>
-                    </div>
-                    <div class="news-content">
-                        <span class="news-date">Loading...</span>
-                        <h3>Memuat berita terbaru...</h3>
-                        <p>Silakan tunggu sebentar.</p>
-                    </div>
-                </div>
-            </div>
+    <!-- berita Section -->
+    <section class="latest-news py-5" id="latest-news">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title display-4 fw-bold text-dark mb-3">
+              Berita Terbaru
+            </h2>
+            <p class="lead text-muted">
+              Informasi terkini seputar kegiatan dan program Desa Belor
+            </p>
+          </div>
         </div>
+
+        <!-- News Grid -->
+        <div class="row g-4">
+          <!-- Featured News (Large Card) -->
+          <div class="col-lg-6 col-md-12">
+            <article
+              class="news-card news-featured h-100 rounded-4 overflow-hidden shadow-sm border-0"
+            >
+              <div class="news-image position-relative">
+                <img
+                  src="./assets/image/galeri1.jpg"
+                  alt="Berita Utama"
+                  class="img-fluid w-100"
+                  style="height: 300px; object-fit: cover"
+                />
+                <div class="news-category position-absolute top-0 start-0 m-3">
+                  <span class="badge bg-success px-3 py-2 rounded-pill"
+                    >Pengumuman</span
+                  >
+                </div>
+                <div class="news-date position-absolute bottom-0 end-0 m-3">
+                  <span
+                    class="badge bg-dark bg-opacity-75 px-3 py-2 rounded-pill"
+                  >
+                    <i class="fas fa-calendar-alt me-1"></i>
+                    20 Agu 2025
+                  </span>
+                </div>
+              </div>
+              <div class="news-content p-4">
+                <h3 class="news-title fw-bold mb-3 text-dark">
+                  <a
+                    href="#"
+                    class="text-decoration-none text-dark"
+                  >
+                    Program Bantuan Bibit Padi Unggul untuk Petani Desa Belor
+                  </a>
+                </h3>
+                <p class="news-excerpt text-muted mb-3">
+                  Pemerintah Desa Belor meluncurkan program bantuan bibit padi
+                  unggul untuk meningkatkan produktivitas pertanian. Program ini
+                  akan menjangkau 200 petani di seluruh wilayah desa...
+                </p>
+                <div
+                  class="news-meta d-flex align-items-center justify-content-between"
+                >
+                  <div class="author d-flex align-items-center">
+                    <div class="author-avatar me-2">
+                      <img
+                        src="./assets/image/admin.png"
+                        alt="Admin"
+                        class="rounded-circle"
+                        width="32"
+                        height="32"
+                      />
+                    </div>
+                    <small class="text-muted">Admin Desa</small>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-outline-success btn-sm rounded-pill px-3"
+                  >
+                    Baca Selengkapnya
+                    <i class="fas fa-arrow-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Side News (Small Cards) -->
+          <div class="col-lg-6 col-md-12">
+            <div class="row g-3 h-100">
+              <!-- News Item 2 -->
+              <div class="col-12">
+                <article
+                  class="news-card news-small d-flex rounded-3 overflow-hidden shadow-sm border-0 bg-white"
+                >
+                  <div class="news-image flex-shrink-0">
+                    <img
+                      src="./assets/image/galeri4.jpeg"
+                      alt="Berita 2"
+                      class="img-fluid"
+                      style="width: 120px; height: 132px; object-fit: cover"
+                    />
+                  </div>
+                  <div class="news-content p-3 flex-grow-1">
+                    <div class="d-flex align-items-center mb-2">
+                      <span
+                        class="badge bg-info text-white px-2 py-1 rounded-pill me-2"
+                        >Kegiatan</span
+                      >
+                      <small class="text-muted">
+                        <i class="fas fa-clock me-1"></i>
+                        18 Agu 2025
+                      </small>
+                    </div>
+                    <h4 class="news-title h6 fw-bold mb-2">
+                      <a
+                        href="#"
+                        class="text-decoration-none text-dark"
+                      >
+                        Gotong Royong Pembersihan Saluran Irigasi
+                      </a>
+                    </h4>
+                    <p class="news-excerpt text-muted small mb-0">
+                      Warga bergotong royong membersihkan saluran irigasi untuk
+                      persiapan musim tanam...
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <!-- News Item 3 -->
+              <div class="col-12">
+                <article
+                  class="news-card news-small d-flex rounded-3 overflow-hidden shadow-sm border-0 bg-white"
+                >
+                  <div class="news-image flex-shrink-0">
+                    <img
+                      src="./assets/image/galeri5.jpg"
+                      alt="Berita 3"
+                      class="img-fluid"
+                      style="width: 120px; height: 150px; object-fit: cover"
+                    />
+                  </div>
+                  <div class="news-content p-3 flex-grow-1">
+                    <div class="d-flex align-items-center mb-2">
+                      <span
+                        class="badge bg-warning text-dark px-2 py-1 rounded-pill me-2"
+                        >Program</span
+                      >
+                      <small class="text-muted">
+                        <i class="fas fa-clock me-1"></i>
+                        15 Agu 2025
+                      </small>
+                    </div>
+                    <h4 class="news-title h6 fw-bold mb-2">
+                      <a
+                        href="#"
+                        class="text-decoration-none text-dark"
+                      >
+                        Pelatihan Pertanian Organik untuk Generasi Muda
+                      </a>
+                    </h4>
+                    <p class="news-excerpt text-muted small mb-0">
+                      Dinas Pertanian mengadakan pelatihan pertanian organik
+                      khusus untuk pemuda desa...
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <!-- News Item 4 -->
+              <div class="col-12">
+                <article
+                  class="news-card news-small d-flex rounded-3 overflow-hidden shadow-sm border-0 bg-white"
+                >
+                  <div class="news-image flex-shrink-0">
+                    <img
+                      src="./assets/image/galeri3.jpg"
+                      alt="Berita 4"
+                      class="img-fluid"
+                      style="width: 120px; height: 130px; object-fit: cover"
+                    />
+                  </div>
+                  <div class="news-content p-3 flex-grow-1">
+                    <div class="d-flex align-items-center mb-2">
+                      <span
+                        class="badge bg-primary text-white px-2 py-1 rounded-pill me-2"
+                        >Prestasi</span
+                      >
+                      <small class="text-muted">
+                        <i class="fas fa-clock me-1"></i>
+                        12 Agu 2025
+                      </small>
+                    </div>
+                    <h4 class="news-title h6 fw-bold mb-2">
+                      <a
+                        href="#"
+                        class="text-decoration-none text-dark"
+                      >
+                        Desa Belor Raih Penghargaan Desa Terbaik
+                      </a>
+                    </h4>
+                    <p class="news-excerpt text-muted small mb-0">
+                      Desa Belor meraih penghargaan sebagai desa terbaik tingkat
+                      kecamatan dalam bidang pertanian...
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- More News Button -->
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <a
+              href="#"
+              class="btn btn-success btn-lg rounded-pill px-5 py-3"
+            >
+              <i class="fas fa-newspaper me-2"></i>
+              Lihat Semua Berita
+              <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Potensi Desa Section -->
-    <section class="village-potential" id="village-potential">
-        <div class="container">
-            <h2 class="section-title">Potensi Desa Belor</h2>
-            <div class="potential-grid">
-                <div class="potential-card">
-                    <div class="potential-image">
-                        <img src="./assets/image/galeri4.jpeg" alt="Pertanian Padi" loading="lazy">
-                    </div>
-                    <div class="potential-content">
-                        <h3>Pertanian Padi</h3>
-                        <p>Lahan sawah produktif dengan sistem irigasi yang baik menghasilkan padi berkualitas tinggi</p>
-                        <ul class="potential-features">
-                            <li>2-3 kali panen per tahun</li>
-                            <li>Varietas unggul</li>
-                            <li>Kelompok tani aktif</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="potential-card">
-                    <div class="potential-image">
-                        <img src="./assets/image/galeri5.jpg" alt="Hortikultura" loading="lazy">
-                    </div>
-                    <div class="potential-content">
-                        <h3>Hortikultura</h3>
-                        <p>Budidaya sayuran segar dan buah-buahan lokal yang mendukung ketahanan pangan</p>
-                        <ul class="potential-features">
-                            <li>Sayuran organik</li>
-                            <li>Buah musiman</li>
-                            <li>Pasar lokal aktif</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="potential-card">
-                    <div class="potential-image">
-                        <img src="./assets/image/galeri6.jpg" alt="Peternakan" loading="lazy">
-                    </div>
-                    <div class="potential-content">
-                        <h3>Peternakan</h3>
-                        <p>Usaha peternakan sapi, kambing, dan unggas yang mendukung ekonomi keluarga</p>
-                        <ul class="potential-features">
-                            <li>Peternakan rakyat</li>
-                            <li>Pakan alami</li>
-                            <li>Koperasi peternak</li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- galeri section -->
+     <section class="gallery-highlight py-5" id="gallery">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="section-title display-4 fw-bold text-dark mb-3">Galeri Desa</h2>
+                <p class="lead text-muted">Momen indah dan kegiatan menarik di Desa Belor</p>
             </div>
         </div>
-    </section>
 
-    <!-- Statistics Section -->
-    <section class="statistics" id="statistics">
-        <div class="container">
-            <h2 class="section-title">Data Desa dalam Angka</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-icon">🏠</div>
-                    <h3 class="stat-number" data-target="250">0</h3>
-                    <p>Kepala Keluarga</p>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">🌾</div>
-                    <h3 class="stat-number" data-target="150">0</h3>
-                    <p>Hektar Sawah</p>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">🚜</div>
-                    <h3 class="stat-number" data-target="180">0</h3>
-                    <p>Petani Aktif</p>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">🏫</div>
-                    <h3 class="stat-number" data-target="3">0</h3>
-                    <p>Sekolah</p>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">🏥</div>
-                    <h3 class="stat-number" data-target="2">0</h3>
-                    <p>Fasilitas Kesehatan</p>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">🛣️</div>
-                    <h3 class="stat-number" data-target="85">0</h3>
-                    <p>% Jalan Beraspal</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer" id="footer">
-        <div class="footer-content">
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="footer-section">
-                        <div class="footer-brand">
-                            <img src="./assets/image/logodesa.png" alt="Logo Desa Belor">
-                            <h3>Desa Belor</h3>
+        <!-- Gallery Grid -->
+        <div class="row g-4">
+            <!-- Large Featured Image -->
+            <div class="col-lg-6 col-md-12">
+                <div class="gallery-item gallery-featured h-100 rounded-4 overflow-hidden position-relative">
+                    <img src="./assets/image/galeri1.jpg" alt="Sawah Desa Belor" class="img-fluid w-100 h-100" style="object-fit: cover; min-height: 400px;">
+                    <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end">
+                        <div class="overlay-content p-4 text-white">
+                            <span class="badge bg-success mb-2 px-3 py-2 rounded-pill">
+                                <i class="fas fa-seedling me-1"></i>
+                                Pertanian
+                            </span>
+                            <h3 class="fw-bold mb-2">Hamparan Sawah Hijau</h3>
+                            <p class="mb-0 opacity-75">Pemandangan sawah yang menghijau siap panen di musim kemarau</p>
                         </div>
-                        <p>Website resmi Desa Belor yang menyediakan informasi lengkap tentang pemerintahan, layanan publik, dan potensi desa.</p>
-                        <div class="social-links">
-                            <a href="#" class="social-link" aria-label="Facebook"><span>📘</span></a>
-                            <a href="#" class="social-link" aria-label="Instagram"><span>📷</span></a>
-                            <a href="#" class="social-link" aria-label="WhatsApp"><span>💬</span></a>
-                        </div>
-                    </div>
-                    
-                    <div class="footer-section">
-                        <h4>Menu Utama</h4>
-                        <ul class="footer-links">
-                            <li><a href="./pages/profil.html">Profil Desa</a></li>
-                            <li><a href="./pages/pemerintahan.html">Pemerintahan</a></li>
-                            <li><a href="./pages/layanan.html">Layanan</a></li>
-                            <li><a href="./pages/pertanian.html">Pertanian</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-section">
-                        <h4>Informasi</h4>
-                        <ul class="footer-links">
-                            <li><a href="./pages/berita.html">Berita</a></li>
-                            <li><a href="./pages/galeri.html">Galeri</a></li>
-                            <li><a href="./pages/kontak.html">Kontak</a></li>
-                            <li><a href="#" data-modal-open="modal-pengaduan">Pengaduan</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-section">
-                        <h4>Kontak Kami</h4>
-                        <div class="contact-info">
-                            <p>📍 Jl. Raya Desa Belor No. XX<br>Kec. [Nama Kecamatan]<br>[Nama Kabupaten], [Kode Pos]</p>
-                            <p>📞 (0XXX) XXX-XXXX</p>
-                            <p>✉️ desabelor@email.com</p>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2025 Desa Belor. Seluruh hak cipta dilindungi.</p>
-                    <p>Dikembangkan dengan ❤️ untuk kemajuan desa</p>
-                </div>
-            </div>
-        </div>
-    </footer>
 
-    <!-- Modal Pengaduan -->
-    <div class="modal" id="modal-pengaduan">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Form Pengaduan Online</h3>
-                <button class="modal-close" onclick="closeModal('pengaduan')">&times;</button>
+            <!-- Right Side Gallery Grid -->
+            <div class="col-lg-6 col-md-12">
+                <div class="row g-3 h-100">
+                    <!-- Gallery Item 2 -->
+                    <div class="col-6">
+                        <div class="gallery-item rounded-3 overflow-hidden position-relative h-100">
+                            <img src="./assets/image/galeri2.jpg" alt="Kegiatan Gotong Royong" class="img-fluid w-100 h-100" style="object-fit: cover; min-height: 190px;">
+                            <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end">
+                                <div class="overlay-content p-3 text-white">
+                                    <span class="badge bg-info mb-1 px-2 py-1 rounded-pill small">
+                                        <i class="fas fa-users me-1"></i>
+                                        Kegiatan
+                                    </span>
+                                    <h4 class="small fw-bold mb-0">Gotong Royong</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="col-6">
+                        <div class="gallery-item rounded-3 overflow-hidden position-relative h-100">
+                            <img src="./assets/image/galeri3.jpg" alt="Balai Desa" class="img-fluid w-100 h-100" style="object-fit: cover; min-height: 190px;">
+                            <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end">
+                                <div class="overlay-content p-3 text-white">
+                                    <span class="badge bg-warning text-dark mb-1 px-2 py-1 rounded-pill small">
+                                        <i class="fas fa-building me-1"></i>
+                                        Fasilitas
+                                    </span>
+                                    <h4 class="small fw-bold mb-0">Balai Desa</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="col-6">
+                        <div class="gallery-item rounded-3 overflow-hidden position-relative h-100">
+                            <img src="./assets/image/galeri4.jpeg" alt="Panen Raya" class="img-fluid w-100 h-100" style="object-fit: cover; min-height: 190px;">
+                            <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end">
+                                <div class="overlay-content p-3 text-white">
+                                    <span class="badge bg-primary mb-1 px-2 py-1 rounded-pill small">
+                                        <i class="fas fa-calendar-check me-1"></i>
+                                        Event
+                                    </span>
+                                    <h4 class="small fw-bold mb-0">Panen Raya</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="col-6">
+                        <div class="gallery-item rounded-3 overflow-hidden position-relative h-100">
+                            <img src="./assets/image/galeri5.jpg" alt="Alam Desa" class="img-fluid w-100 h-100" style="object-fit: cover; min-height: 190px;">
+                            <div class="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end">
+                                <div class="overlay-content p-3 text-white">
+                                    <span class="badge bg-success mb-1 px-2 py-1 rounded-pill small">
+                                        <i class="fas fa-leaf me-1"></i>
+                                        Alam
+                                    </span>
+                                    <h4 class="small fw-bold mb-0">Pepohonan Rindang</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <form id="pengaduan-form">
-                    <div class="form-group">
-                        <label for="nama">Nama Lengkap</label>
-                        <input type="text" id="nama" name="nama" required>
+        </div>
+
+        <!-- Gallery Stats -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="gallery-stats bg-light rounded-4 p-4">
+                    <div class="row text-center">
+                        <div class="col-lg-3 col-md-6 col-6 mb-3 mb-lg-0">
+                            <div class="stat-item">
+                                <h3 class="display-6 fw-bold text-success mb-1">150+</h3>
+                                <p class="text-muted mb-0">Foto Kegiatan</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6 mb-3 mb-lg-0">
+                            <div class="stat-item">
+                                <h3 class="display-6 fw-bold text-info mb-1">25+</h3>
+                                <p class="text-muted mb-0">Event Terdokumentasi</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6 mb-3 mb-md-0">
+                            <div class="stat-item">
+                                <h3 class="display-6 fw-bold text-warning mb-1">12</h3>
+                                <p class="text-muted mb-0">Kategori Galeri</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <div class="stat-item">
+                                <h3 class="display-6 fw-bold text-primary mb-1">2025</h3>
+                                <p class="text-muted mb-0">Update Terbaru</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="telepon">No. Telepon</label>
-                        <input type="tel" id="telepon" name="telepon" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="kategori">Kategori</label>
-                        <select id="kategori" name="kategori" required>
-                            <option value="">Pilih Kategori</option>
-                            <option value="infrastruktur">Infrastruktur</option>
-                            <option value="layanan">Layanan Publik</option>
-                            <option value="lingkungan">Lingkungan</option>
-                            <option value="lainnya">Lainnya</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="pesan">Isi Pengaduan</label>
-                        <textarea id="pesan" name="pesan" rows="5" required placeholder="Jelaskan pengaduan Anda dengan detail..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Kirim Pengaduan</button>
-                </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- View All Gallery Button -->
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <a href="#" class="btn btn-success btn-lg rounded-pill px-5 py-3">
+                    <i class="fas fa-images me-2"></i>
+                    Lihat Semua Galeri
+                    <i class="fas fa-arrow-right ms-2"></i>
+                </a>
             </div>
         </div>
     </div>
 
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img id="galleryModalImage" src="" alt="" class="img-fluid w-100 rounded-3">
+                    <div class="modal-info bg-dark bg-opacity-75 text-white p-3 mt-2 rounded-3">
+                        <h5 id="galleryModalTitle" class="mb-1"></h5>
+                        <p id="galleryModalDescription" class="mb-0 small opacity-75"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Aparatur Desa Section -->
+    <section class="aparatur-section text-center" id="aparatur">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <h2 class="section-title display-4 fw-bold text-dark mb-3">Aparatur Desa</h2>
+            <p class="lead text-muted">Kenali lebih dekat tim yang berdedikasi membangun Desa Belor</p>
+          </div>
+        </div>
+
+        <!-- Aparatur Grid -->
+        <div class="row g-4 justify-content-center">
+          <!-- Aparatur Card 1: Kepala Desa -->
+          <div class="col-lg-3 col-md-6">
+            <div class="aparatur-card text-center">
+              <img src="./assets/image/admin.png" class="card-img-top" alt="Kepala Desa">
+              <div class="card-body">
+                <h4 class="card-title">Nama Kepala Desa</h4>
+                <h6 class="card-subtitle mb-3">Kepala Desa</h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aparatur Card 2: Sekretaris Desa -->
+          <div class="col-lg-3 col-md-6">
+            <div class="aparatur-card text-center">
+              <img src="./assets/image/admin.png" class="card-img-top" alt="Sekretaris Desa">
+              <div class="card-body">
+                <h4 class="card-title">Nama Sekretaris</h4>
+                <h6 class="card-subtitle mb-3">Sekretaris Desa</h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aparatur Card 3: Kaur Umum -->
+          <div class="col-lg-3 col-md-6">
+            <div class="aparatur-card text-center">
+              <img src="./assets/image/admin.png" class="card-img-top" alt="Kaur Umum">
+              <div class="card-body">
+                <h4 class="card-title">Nama Kaur Umum</h4>
+                <h6 class="card-subtitle mb-3">Kaur Umum</h6>
+              </div>
+            </div>
+          </div>
+          
+           <!-- Aparatur Card 4: Kaur Perencanaan -->
+          <div class="col-lg-3 col-md-6">
+            <div class="aparatur-card text-center">
+              <img src="./assets/image/admin.png" class="card-img-top" alt="Kaur Perencanaan">
+              <div class="card-body">
+                <h4 class="card-title">Nama Kaur Perencanaan</h4>
+                <h6 class="card-subtitle mb-3">Kaur Perencanaan</h6>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <img src="./assets/image/logodesa.png" alt="Logo Desa" class="footer-logo">
+            <h3 class="footer-brand-text">Desa Belor</h3>
+            <p>Jl. Raya Desa Belor No. 123, Kecamatan XXX, Kabupaten YYY, Kode Pos 12345</p>
+            <div class="mt-3">
+              <ul class="social-icons">
+                <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h4 class="footer-heading">Tautan Cepat</h4>
+            <ul class="footer-links">
+              <li><a href="#">Beranda</a></li>
+              <li><a href="#">Berita</a></li>
+              <li><a href="#">Galeri</a></li>
+              <li><a href="#">Pemerintahan</a></li>
+              <li><a href="#">Layanan</a></li>
+            </ul>
+          </div>
+
+          <!-- Services Section -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h4 class="footer-heading">Layanan Populer</h4>
+            <ul class="footer-links">
+              <li><a href="#">Surat Keterangan Usaha</a></li>
+              <li><a href="#">Pengajuan KTP</a></li>
+              <li><a href="#">Lapor Pengaduan</a></li>
+              <li><a href="#">Informasi Pertanian</a></li>
+              <li><a href="#">Jadwal Kegiatan Desa</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info Section -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h4 class="footer-heading">Hubungi Kami</h4>
+            <ul class="footer-links footer-contact-info">
+              <li><i class="fas fa-phone"></i> (021) 123-4567</li>
+              <li><i class="fas fa-envelope"></i> kontak@desabelor.id</li>
+              <li><i class="fas fa-map-marker-alt"></i> Kantor Desa Belor</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Desa Belor. Semua Hak Dilindungi. Didesain oleh <a href="#">KKN Kelompok 2</a>.</p>
+        </div>
+      </div>
+    </footer>
+
     <!-- JavaScript Files -->
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/components/navbar.js"></script>
     <script src="./assets/js/components/modal.js"></script>
     <script src="./assets/js/components/forms.js"></script>
     <script src="./assets/js/pages/home.js"></script>
-</body>
+    <script src="./assets/js/components/galeri.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
