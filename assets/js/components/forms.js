@@ -1,8 +1,3 @@
-/**
- * FORMS COMPONENT
- * Handles form validation and submission
- */
-
 DesaBelor.components.forms = {
   init() {
     this.bindEvents();

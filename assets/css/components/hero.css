@@ -17,7 +17,6 @@
     transition: opacity 0.5s ease-in-out;
 }
 
-
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -35,7 +34,6 @@
     padding: 80px 0;
     animation: fadeInUp 1.2s ease-out;
 }
-
 
 .hero-text {
     color: white;
@@ -63,47 +61,46 @@
     max-width: 90%;
 }
 
-/* Enhanced Button Styling with better UX */
+/* Enhanced Button Styling with better UX - FIXED FOR MOBILE */
 .hero-buttons {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 
+/* Override Bootstrap button styles completely */
 .hero-buttons .btn {
-    padding: 15px 35px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 15px 35px !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
     overflow: hidden;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
     min-width: 200px;
     text-align: center;
     cursor: pointer;
     /* Improved focus states for accessibility */
     outline: none;
+    /* Prevent Bootstrap color overrides */
+    box-shadow: none !important;
 }
 
 /* Better focus indicators */
-.hero-buttons .btn:focus {
-    outline: 3px solid rgba(255, 255, 255, 0.6);
-    outline-offset: 4px;
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+.hero-buttons .btn:focus,
+.hero-buttons .btn:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.8) !important;
+    outline-offset: 4px !important;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3) !important;
 }
 
 .hero-buttons .btn:focus:not(:focus-visible) {
-    outline: none;
-    box-shadow: none;
-}
-
-.hero-buttons .btn:focus-visible {
-    outline: 3px solid rgba(255, 255, 255, 0.8);
-    outline-offset: 4px;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 /* Enhanced shimmer effect */
@@ -129,46 +126,69 @@
     z-index: 2;
 }
 
-.hero-buttons .btn-primary {
-    background: linear-gradient(135deg, #90ee90, #7dd87d);
-    color: #2c5530;
-    border-color: #90ee90;
-    /* box-shadow: 0 8px 25px rgba(144, 238, 144, 0.4); */
+/* PRIMARY BUTTON - FIXED STATES */
+.hero-buttons .btn-primary,
+.hero-buttons .btn.btn-primary {
+    background: linear-gradient(135deg, #90ee90, #7dd87d) !important;
+    color: #2c5530 !important;
+    border-color: #90ee90 !important;
 }
 
-.hero-buttons .btn-primary:hover {
-    background: linear-gradient(135deg, #7dd87d, #6bc96b);
-    transform: translateY(-4px) scale(1.02);
-    /* box-shadow: 0 15px 40px rgba(144, 238, 144, 0.6); */
-    border-color: #7dd87d;
-    color: #1a3d1e;
+.hero-buttons .btn-primary:hover,
+.hero-buttons .btn.btn-primary:hover {
+    background: linear-gradient(135deg, #7dd87d, #6bc96b) !important;
+    transform: translateY(-4px) scale(1.02) !important;
+    border-color: #7dd87d !important;
+    color: #1a3d1e !important;
+    box-shadow: 0 15px 40px rgba(144, 238, 144, 0.6) !important;
 }
 
-.hero-buttons .btn-primary:active {
-    transform: translateY(-2px) scale(1.01);
-    transition: all 0.1s ease;
+.hero-buttons .btn-primary:active,
+.hero-buttons .btn.btn-primary:active,
+.hero-buttons .btn-primary:focus,
+.hero-buttons .btn.btn-primary:focus,
+.hero-buttons .btn-primary.active,
+.hero-buttons .btn.btn-primary.active {
+    background: linear-gradient(135deg, #7dd87d, #6bc96b) !important;
+    color: #1a3d1e !important;
+    border-color: #7dd87d !important;
+    transform: translateY(-2px) scale(1.01) !important;
+    transition: all 0.1s ease !important;
+    box-shadow: 0 8px 25px rgba(144, 238, 144, 0.4) !important;
 }
 
-.hero-buttons .btn-secondary {
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    border-color: rgba(255,255,255,0.8);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+/* SECONDARY BUTTON - FIXED STATES */
+.hero-buttons .btn-secondary,
+.hero-buttons .btn.btn-outline-light {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    border-color: rgba(255,255,255,0.8) !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2) !important;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
 
-.hero-buttons .btn-secondary:hover {
-    background: rgba(255,255,255,0.2);
-    border-color: white;
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-    color: white;
+.hero-buttons .btn-secondary:hover,
+.hero-buttons .btn.btn-outline-light:hover {
+    background: rgba(255,255,255,0.2) !important;
+    border-color: white !important;
+    transform: translateY(-4px) scale(1.02) !important;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3) !important;
+    color: white !important;
 }
 
-.hero-buttons .btn-secondary:active {
-    transform: translateY(-2px) scale(1.01);
-    transition: all 0.1s ease;
+.hero-buttons .btn-secondary:active,
+.hero-buttons .btn.btn-outline-light:active,
+.hero-buttons .btn-secondary:focus,
+.hero-buttons .btn.btn-outline-light:focus,
+.hero-buttons .btn-secondary.active,
+.hero-buttons .btn.btn-outline-light.active {
+    background: rgba(255,255,255,0.2) !important;
+    color: white !important;
+    border-color: white !important;
+    transform: translateY(-2px) scale(1.01) !important;
+    transition: all 0.1s ease !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2) !important;
 }
 
 .hero-stats {
@@ -191,7 +211,6 @@
     /* Improved shadow for depth */
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
-
 
 .stat-item::before {
     content: '';
@@ -328,7 +347,7 @@
     animation: countUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Enhanced Responsive Design */
+/* MOBILE RESPONSIVE FIXES */
 @media (max-width: 768px) {
     .hero {
         min-height: 100vh;
@@ -350,11 +369,28 @@
     }
     
     .hero-buttons .btn {
-        width: 100%;
-        max-width: 320px;
-        min-width: unset;
-        padding: 14px 20px;
-        font-size: 1rem;
+        width: 100% !important;
+        max-width: 320px !important;
+        min-width: unset !important;
+        padding: 14px 20px !important;
+        font-size: 1rem !important;
+    }
+    
+    /* Mobile specific button fixes */
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn.btn-primary {
+        background: linear-gradient(135deg, #90ee90, #7dd87d) !important;
+        color: #2c5530 !important;
+        border-color: #90ee90 !important;
+    }
+    
+    .hero-buttons .btn-primary:active,
+    .hero-buttons .btn.btn-primary:active,
+    .hero-buttons .btn-primary:focus,
+    .hero-buttons .btn.btn-primary:focus {
+        background: linear-gradient(135deg, #7dd87d, #6bc96b) !important;
+        color: #1a3d1e !important;
+        border-color: #7dd87d !important;
     }
     
     .stat-item {
@@ -369,10 +405,10 @@
     }
     
     .hero-buttons .btn {
-        padding: 12px 16px;
-        font-size: 0.95rem;
-        letter-spacing: 0.5px;
-        max-width: 280px;
+        padding: 12px 16px !important;
+        font-size: 0.95rem !important;
+        letter-spacing: 0.5px !important;
+        max-width: 280px !important;
     }
     
     .stat-item {
@@ -381,7 +417,31 @@
     }
 }
 
-/* Accessibility Improvements */
+/* Better button states for touch devices */
+@media (hover: none) and (pointer: coarse) {
+    .hero-buttons .btn:hover {
+        transform: none !important;
+    }
+    
+    .hero-buttons .btn:active,
+    .hero-buttons .btn.btn-primary:active {
+        transform: scale(0.98) !important;
+        transition: transform 0.1s ease !important;
+        background: linear-gradient(135deg, #7dd87d, #6bc96b) !important;
+        color: #1a3d1e !important;
+    }
+    
+    .hero-buttons .btn.btn-outline-light:active {
+        background: rgba(255,255,255,0.2) !important;
+        color: white !important;
+    }
+    
+    .stat-item:hover {
+        transform: none;
+        background: initial;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     .hero-content,
     .hero-stats,
@@ -411,7 +471,7 @@
     }
     
     .hero-buttons .btn {
-        border-width: 3px;
+        border-width: 3px !important;
     }
     
     .hero-title,
@@ -472,22 +532,4 @@
     -moz-user-select: text;
     -ms-user-select: text;
     user-select: text;
-}
-
-/* Better button states for touch devices */
-@media (hover: none) and (pointer: coarse) {
-    .hero-buttons .btn:hover {
-        transform: none;
-        background: initial;
-    }
-    
-    .hero-buttons .btn:active {
-        transform: scale(0.98);
-        transition: transform 0.1s ease;
-    }
-    
-    .stat-item:hover {
-        transform: none;
-        background: initial;
-    }
 }

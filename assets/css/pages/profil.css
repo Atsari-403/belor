@@ -1,0 +1,873 @@
+/* Page Header Styling */
+.page-header {
+  background: linear-gradient(
+      135deg,
+      rgba(44, 85, 48, 0.9),
+      rgba(74, 124, 89, 0.9)
+    ),
+    url("../assets/image/bg.jpg") center/cover;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.page-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.page-header-content {
+  position: relative;
+  z-index: 2;
+}
+
+.breadcrumb-nav {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.breadcrumb-item a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  color: white;
+}
+
+.breadcrumb-item.active {
+  color: white;
+}
+
+/* Content Sections */
+.content-section {
+  padding: 80px 0;
+}
+
+.section-title {
+  color: #2c5530;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(135deg, #2c5530, #4a7c59);
+  border-radius: 2px;
+}
+
+.text-center .section-title::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Info Cards */
+.info-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: none;
+  height: 100%;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+.info-card-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2rem;
+}
+
+.icon-success {
+  background: linear-gradient(135deg, #2c5530, #4a7c59);
+  color: white;
+}
+
+.icon-info {
+  background: linear-gradient(135deg, #17a2b8, #20c997);
+  color: white;
+}
+
+.icon-warning {
+  background: linear-gradient(135deg, #ffc107, #fd7e14);
+  color: white;
+}
+
+.icon-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+}
+
+/* Stats Section */
+.stats-section {
+  background: linear-gradient(135deg, #2c5530, #4a7c59);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../assets/image/galeri1.jpg") center/cover;
+  opacity: 0.1;
+}
+
+.stats-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #90ee90;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Timeline Styling */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(135deg, #2c5530, #4a7c59);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -1.5rem;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2c5530;
+  border: 4px solid white;
+  box-shadow: 0 0 0 4px #2c5530;
+}
+
+.timeline-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-year {
+  color: #2c5530;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Vision Mission Cards */
+.vision-mission-card {
+  background: linear-gradient(
+    135deg,
+    rgba(44, 85, 48, 0.05),
+    rgba(74, 124, 89, 0.05)
+  );
+  border: 2px solid rgba(44, 85, 48, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.vision-mission-card:hover {
+  border-color: rgba(44, 85, 48, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(44, 85, 48, 0.15);
+}
+
+.vision-mission-icon {
+  font-size: 3rem;
+  color: #2c5530;
+  margin-bottom: 1rem;
+}
+
+/* Map Styling */
+.map-placeholder {
+  background: linear-gradient(135deg, #e9ecef, #f8f9fa);
+  border: 2px dashed #2c5530;
+  border-radius: 12px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2c5530;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+
+/* Large Desktop (1400px+) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+
+  .page-header {
+    min-height: 50vh;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .info-card {
+    padding: 3rem;
+  }
+
+  .stat-number {
+    font-size: 4rem;
+  }
+}
+
+/* Desktop (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .info-card {
+    padding: 1.5rem;
+  }
+
+  .info-card-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .vision-mission-card {
+    padding: 1.5rem;
+  }
+
+  .timeline-content {
+    padding: 1.25rem;
+  }
+}
+
+/* Tablet Landscape (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .page-header {
+    min-height: 35vh;
+  }
+
+  .page-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .content-section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .info-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .info-card-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .stat-label {
+    font-size: 1rem;
+  }
+
+  .vision-mission-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .vision-mission-icon {
+    font-size: 2.5rem;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item {
+    padding-left: 2rem;
+  }
+
+  .timeline-marker {
+    left: -1.25rem;
+    width: 16px;
+    height: 16px;
+  }
+
+  .timeline-content {
+    padding: 1.25rem;
+  }
+
+  /* Batas wilayah cards - 2 columns on tablet */
+  .border.p-3 {
+    padding: 1rem !important;
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* Tablet Portrait (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .page-header {
+    min-height: 30vh;
+    padding: 2rem 0;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .page-header p {
+    font-size: 1rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.875rem;
+  }
+
+  .content-section {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Info cards - single column */
+  .info-card {
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .info-card-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 1.25rem;
+  }
+
+  .info-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .info-card p {
+    font-size: 0.9rem;
+  }
+
+  /* Stats section */
+  .stat-item {
+    padding: 1rem;
+  }
+
+  .stat-number {
+    font-size: 2.2rem;
+  }
+
+  .stat-label {
+    font-size: 0.95rem;
+  }
+
+  /* Vision Mission */
+  .vision-mission-card {
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .vision-mission-icon {
+    font-size: 2.2rem;
+  }
+
+  .vision-mission-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .vision-mission-card p,
+  .vision-mission-card ul {
+    font-size: 0.9rem;
+  }
+
+  /* Timeline adjustments */
+  .timeline {
+    padding-left: 1.25rem;
+  }
+
+  .timeline::before {
+    left: 0.75rem;
+    width: 2px;
+  }
+
+  .timeline-item {
+    padding-left: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .timeline-marker {
+    left: -1rem;
+    width: 14px;
+    height: 14px;
+  }
+
+  .timeline-content {
+    padding: 1rem;
+  }
+
+  .timeline-year {
+    font-size: 1.1rem;
+  }
+
+  /* Batas wilayah - single column */
+  .border.p-3 {
+    padding: 0.75rem !important;
+    margin-bottom: 0.75rem;
+  }
+
+  .border.p-3 i {
+    font-size: 1.2rem;
+  }
+
+  .border.p-3 h6 {
+    font-size: 0.95rem;
+  }
+
+  .border.p-3 small {
+    font-size: 0.8rem;
+  }
+
+  /* Geografis list */
+  .list-unstyled li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .map-placeholder {
+    height: 300px;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile (max-width: 575px) */
+@media (max-width: 575.98px) {
+  .page-header {
+    min-height: 25vh;
+    padding: 1.5rem 0;
+  }
+
+  .page-header h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-header p {
+    font-size: 0.9rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.8rem;
+    justify-content: center;
+  }
+
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .content-section {
+    padding: 40px 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .section-title::after {
+    left: 50% !important;
+    transform: translateX(-50%);
+    width: 40px;
+  }
+
+  /* Info cards */
+  .info-card {
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    border-radius: 12px;
+  }
+
+  .info-card-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .info-card h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .info-card p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  /* Stats section */
+  .stats-section {
+    padding: 50px 0;
+  }
+
+  .stat-item {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+  }
+
+  /* Vision Mission - Stack vertically */
+  .vision-mission-card {
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .vision-mission-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .vision-mission-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .vision-mission-card p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .vision-mission-card ul {
+    font-size: 0.85rem;
+  }
+
+  .vision-mission-card li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+
+  /* Timeline mobile optimization */
+  .timeline {
+    padding-left: 1rem;
+  }
+
+  .timeline::before {
+    left: 0.5rem;
+    width: 2px;
+  }
+
+  .timeline-item {
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .timeline-marker {
+    left: -0.75rem;
+    width: 12px;
+    height: 12px;
+    border-width: 3px;
+  }
+
+  .timeline-content {
+    padding: 0.75rem;
+    border-radius: 8px;
+  }
+
+  .timeline-year {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  /* Batas wilayah - single column with smaller cards */
+  .border.p-3 {
+    padding: 0.5rem !important;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+  }
+
+  .border.p-3 i {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .border.p-3 h6 {
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .border.p-3 small {
+    font-size: 0.75rem;
+  }
+
+  /* Geografis section adjustments */
+  .list-unstyled {
+    margin-top: 1rem;
+  }
+
+  .list-unstyled li {
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .list-unstyled li i {
+    margin-top: 0.1rem;
+    flex-shrink: 0;
+  }
+
+  .map-placeholder {
+    height: 250px;
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .map-placeholder i {
+    font-size: 2rem;
+  }
+
+  /* Additional info card in sejarah section */
+  .info-card h4 {
+    font-size: 1rem;
+  }
+
+  .info-card h6 {
+    font-size: 0.9rem;
+  }
+
+  .info-card .small {
+    font-size: 0.8rem;
+  }
+
+  /* Footer adjustments */
+  .footer-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer-brand-text {
+    font-size: 1.3rem;
+  }
+
+  .footer-heading {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-links {
+    font-size: 0.85rem;
+  }
+
+  .footer-contact-info li {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .social-icons a {
+    width: 35px;
+    height: 35px;
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+  }
+}
+
+/* Extra Small Mobile (max-width: 375px) */
+@media (max-width: 375px) {
+  .page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .info-card {
+    padding: 0.75rem;
+  }
+
+  .info-card-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .vision-mission-card {
+    padding: 0.75rem;
+  }
+
+  .timeline-content {
+    padding: 0.5rem;
+  }
+
+  .border.p-3 {
+    padding: 0.4rem !important;
+  }
+
+  .map-placeholder {
+    height: 200px;
+  }
+
+  /* Navbar brand text hide on very small screens */
+  .brand-text {
+    display: none;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+  .page-header {
+    min-height: 60vh;
+  }
+
+  .content-section {
+    padding: 30px 0;
+  }
+}
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .info-card,
+  .vision-mission-card,
+  .timeline-content {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* Print styles */
+@media print {
+  .navbar,
+  .footer,
+  .page-header {
+    display: none;
+  }
+
+  .content-section {
+    padding: 20px 0;
+  }
+
+  .info-card,
+  .vision-mission-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeInUp 0.6s ease-out;
+}

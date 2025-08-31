@@ -1,11 +1,4 @@
-/**
- * DESA BELOR - MAIN JAVASCRIPT
- * Core functionality and utilities
- */
-
-// Global App Configuration
 const DesaBelor = {
-  // Configuration
   config: {
     animationDuration: 300,
     scrollOffset: 90,
@@ -39,14 +32,7 @@ const DesaBelor = {
   },
 };
 
-// ======================
-// UTILITY FUNCTIONS
-// ======================
-
 DesaBelor.utils = {
-  /**
-   * Debounce function to limit function calls
-   */
   debounce(func, wait, immediate = false) {
     let timeout;
     return function executedFunction(...args) {
@@ -61,9 +47,6 @@ DesaBelor.utils = {
     };
   },
 
-  /**
-   * Throttle function to limit function calls
-   */
   throttle(func, limit) {
     let inThrottle;
     return function (...args) {
@@ -75,9 +58,6 @@ DesaBelor.utils = {
     };
   },
 
-  /**
-   * Check if element is in viewport
-   */
   isInViewport(element, offset = 0) {
     const rect = element.getBoundingClientRect();
     return (
